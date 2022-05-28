@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableViewController.dataSource = self
+        tableViewController.delegate = self
         
         fetchData()
     }
